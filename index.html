@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Video Player</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="player">
+        <video id="video-player" src="https://res.cloudinary.com/kiulcode/video/upload/v1664223201/trailer_cyjsut.mp4" poster="img/poster.png"></video>
+        <div class="player-overlay">
+            <h2 class="player-title">Dragon Ball</h2>
+            <div class="player-actions">
+                <button class="btn" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos">
+                    <img src="img/skip-15-2.svg" alt="">
+                </button>
+                <button class="btn" id="play" aria-label="Reproducir" title="Reproducir">
+                    <img src="img/play.svg" alt="">
+                </button>
+                <button class="btn" id="pause" aria-label="Pausar" title="Pausar" hidden>
+                    <img src="img/pause.svg" alt="">
+                </button>
+                <button class="btn" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos">
+                    <img src="img/skip-15-1.svg" alt="">
+                </button>
+            </div>
+            <div class="player-progress">
+                <input id="progress" type="range" min="0" value="0" step="1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/player.js"></script>
+</body>
+</html>

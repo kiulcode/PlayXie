@@ -1,0 +1,33 @@
+.btn {
+    cursor: pointer;
+    inline-size: 53px;
+    block-size: 53px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn:active {
+    transform: scale(90%);
+}
+
+#pause img{
+    height: 30px;
+    width: 30px;
+}
+
+#play img{
+    height: 30px;
+    width: 30px;
+}
+
+#backward img{
+    height: 30px;
+    width: 30px;
+}
+
+#forward img{
+    height: 30px;
+    width: 30px;
+}
